@@ -1,0 +1,66 @@
+/* General styles for the door content */
+.door-content {
+  text-align: center;
+  padding: 20px;
+  color: #333; /* Default text color */
+  min-height: 100vh; /* Make sure it takes full height on smaller screens */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Input field styles */
+input[type="password"] {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 80%; /* Responsive width */
+  max-width: 300px; /* Max width for larger screens */
+}
+
+/* Button styles */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: red; /* Change to your desired color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: darkred; /* Darker shade on hover */
+}
+
+/* Styles for the door image */
+img {
+  max-width: 90%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .door-content {
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+
+  input[type="password"],
+  button {
+    width: 90%; /* Wider on mobile */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Smaller header size for mobile */
+  }
+}
+
+@media (min-width: 769px) {
+  h1 {
+    font-size: 2rem; /* Larger header size for computers */
+  }
+}

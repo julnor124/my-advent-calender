@@ -1,0 +1,146 @@
+/* General reset for margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif; /* Adjust as needed */
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Main calendar container styling */
+.calendar-container {
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  min-height: 100vh; /* Full height for the container */
+  overflow-y: auto; /* Allow scrolling if content exceeds the viewport */
+  position: relative; /* For the background video */
+  padding: 20px; /* Add some padding */
+}
+
+/* Video styling */
+video {
+  position: absolute; /* Positioning for the video */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  object-fit: cover; /* Cover entire container */
+  z-index: -1; /* Send video behind other elements */
+}
+
+/* Logo styling */
+.calendar-logo {
+  max-width: 100%; /* Make sure the logo is responsive */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px; /* Space between the logo and the calendar */
+}
+
+/* Calendar grid styling */
+.calendar {
+  display: grid; /* Use grid for layout */
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(120px, 1fr)
+  ); /* Responsive grid */
+  gap: 10px; /* Space between grid items */
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding around the grid */
+}
+
+/* Individual door styling */
+.door {
+  background-color: #8b0000; /* Dark red background */
+  color: #ffd700; /* Gold text color for a festive look */
+  text-align: center;
+  padding: 20px;
+  border: 4px solid #ffd700; /* Gold border */
+  border-radius: 10px; /* Rounded corners */
+  text-decoration: none; /* Remove underline from links */
+  display: flex; /* Center content */
+  flex-direction: column; /* Stack text vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  min-height: 100px; /* Minimum height for each door */
+  transition: transform 0.3s; /* Add a transition effect for hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+/* Hover effect for doors */
+.door:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  background-color: #c70039; /* Bright red on hover */
+}
+
+/* Welcome message styling */
+.welcome-message {
+  position: relative; /* Position relative to the calendar container */
+  z-index: 1; /* Ensure it appears above the video */
+  color: white; /* Classic Christmas white */
+  text-align: center; /* Center the text */
+  margin: 20px 0; /* Add some spacing above and below */
+  font-size: 3rem; /* Larger font size for emphasis */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Shadow for better readability */
+  font-family: "Great Vibes", cursive; /* Festive cursive font */
+  background: rgba(0, 128, 0, 0.7); /* Semi-transparent green background */
+  padding: 20px; /* Add padding around the text */
+  border-radius: 10px; /* Rounded corners for a softer look */
+  border: 4px solid #ffd700; /* Gold border for the message */
+  display: inline-block; /* Make the background fit the text */
+  max-width: 90%; /* Maximum width to fit smaller screens */
+  overflow: hidden; /* Ensure no overflow of decorations */
+}
+
+/* Add some festive animations */
+@keyframes sparkle {
+  0% {
+    text-shadow: 0 0 20px rgba(255, 0, 0, 1), 0 0 30px rgba(255, 204, 0, 1);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255, 255, 0, 1), 0 0 30px rgba(255, 0, 0, 1);
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(255, 0, 0, 1), 0 0 30px rgba(255, 204, 0, 1);
+  }
+}
+
+/* Apply sparkle animation to welcome message */
+.welcome-message {
+  animation: sparkle 2s infinite; /* Animate the sparkle effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .welcome-message {
+    font-size: 2.5rem; /* Slightly smaller font size for tablets */
+    padding: 15px; /* Reduced padding */
+  }
+
+  .calendar {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+  }
+
+  .door {
+    min-height: 80px; /* Adjust height for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-message {
+    font-size: 2rem; /* Smaller font size for phones */
+    padding: 10px; /* Reduced padding for phones */
+    margin: 10px 0; /* Reduced margin */
+  }
+
+  .calendar {
+    grid-template-columns: 1fr; /* 1 column for mobile */
+  }
+
+  .door {
+    min-height: 60px; /* Further adjust height for smaller mobile */
+  }
+}
