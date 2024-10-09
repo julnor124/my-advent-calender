@@ -174,7 +174,7 @@ const Door = () => {
         </>
       ) : (
         <div>
-          <h1>Välkommen till Lucka {doorNumber}!</h1>
+          <h1>Välkommen till lucka {doorNumber}!</h1>
           <img
             src={`./images/door${doorNumber}.jpg`}
             alt={`Door ${doorNumber}`}

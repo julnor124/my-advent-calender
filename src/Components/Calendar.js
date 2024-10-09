@@ -6,7 +6,7 @@ const Calendar = () => {
   const doors = Array.from({ length: 24 }, (_, index) => index + 1); // Creates an array [1, 2, ..., 24]
 
   // State for video source
-  const [videoSrc, setVideoSrc] = useState("/video-large.mp4"); // Default video for larger screens
+  const [videoSrc, setVideoSrc] = useState("/julvideo.mp4"); // Default video for larger screens
 
   // Effect to handle window resize and change video source
   useEffect(() => {
@@ -42,11 +42,18 @@ const Calendar = () => {
       />
       <h1 className="welcome-message">JULIAS JULKALENDER TILL FAMILJEN 2024</h1>
       <div className="calendar">
-        {doors.map((door) => (
-          <Link key={door} to={`/door/${door}`} className="door">
-            <div className="door-number">{door}</div>
-          </Link>
-        ))}
+        {doors.map((door) =>
+          door === 4 ? ( // If the door is 24, route to Wordle
+            <Link key={door} to={`/wordle`} className="door">
+              <div className="door-number">{door}</div>
+            </Link>
+          ) : (
+            // Else, link to the standard door
+            <Link key={door} to={`/door/${door}`} className="door">
+              <div className="door-number">{door}</div>
+            </Link>
+          )
+        )}
       </div>
     </div>
   );

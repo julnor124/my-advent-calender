@@ -1,0 +1,149 @@
+/* General styles for the Wordle container */
+.wordle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: "Comic Sans MS", cursive, sans-serif; /* Festive, fun font */
+  background-color: #f0f8ff; /* Light winter background color */
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Wordle heading */
+.wordle-container h2 {
+  color: #d62828; /* Christmas red */
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px #000000;
+  font-family: "Lobster", cursive; /* Optional festive font */
+}
+
+/* Form input styling */
+input[type="text"] {
+  padding: 10px;
+  font-size: 1.5rem;
+  border: 2px solid #c52222; /* Darker red for input border */
+  border-radius: 8px;
+  width: 90%;
+  max-width: 300px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: #228b22; /* Christmas green */
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #145214; /* Darker green on hover */
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Styling the letter attempts */
+.attempt {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+/* Letter box for correct letter and position */
+.correct {
+  background-color: #28a745; /* Festive green */
+  color: white;
+  padding: 10px;
+  margin: 2px;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Letter box for almost correct letter (wrong position) */
+.almost {
+  background-color: #ffa500; /* Orange for almost correct letter */
+  color: white;
+  padding: 10px;
+  margin: 2px;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Letter box for wrong letter */
+.wrong {
+  background-color: #dcdcdc; /* Grey for wrong letter */
+  color: white;
+  padding: 10px;
+  margin: 2px;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .correct,
+  .almost,
+  .wrong {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  input[type="text"] {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Adding Christmas decorations */
+.wordle-container:before {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  height: 40px;
+}
+
+.wordle-container:after {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  height: 50px;
+}
