@@ -68,3 +68,30 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Idéer för luckorna:
+
+1. Välkommsvideo
+2. en liten jultext
+3. Gissa låten (gissa jullåten)
+4. En julordel (KLAR)
+5. carola broccoli
+6. Lite lugnare lucka idag. Ät en pepparkaka och kolla på denna brasa
+7.
+8. någon julhälsning
+9. någon liten jultext
+10.
+11. Gissa låten när jag sjunger baklänges
+12.
+13. Video, ha en fin lucia och ät lite lussebullar
+14.
+15.
+16.
+17.
+18.
+19.
+20. Julprommenad
+21. Kolla grinchen med mig
+22.
+23. uppesittarkväll (videohälsning)
+24. Video, tack för att ni deltagit i denna julkalender (kolla under min säng för ett minipaket)
