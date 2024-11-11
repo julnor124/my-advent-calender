@@ -1,16 +1,16 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Calendar from "/Users/julianordqvist/advent-calendar/src/Components/Calendar.js";
-import Door from "/Users/julianordqvist/advent-calendar/src/Components/Door.js";
-import Wordle from "/Users/julianordqvist/advent-calendar/src/Components/Wordle.js";
-import Wordle2 from "/Users/julianordqvist/advent-calendar/src/Components/Wordle_2.js";
-import GuessSong from "/Users/julianordqvist/advent-calendar/src/Components/GuessSong.js";
-import Broccoli from "/Users/julianordqvist/advent-calendar/src/Components/Broccoli.js";
-import Country from "/Users/julianordqvist/advent-calendar/src/Components/Country.js";
-import CatComponent from "/Users/julianordqvist/advent-calendar/src/Components/Julgåta.js";
-import Welcome from "./Components/Welcome";
+import Calendar from "./Components/Calendar"; // Relative path
+import Door from "./Components/Door"; // Relative path
+import Wordle from "./Components/Wordle"; // Relative path
+import Wordle2 from "./Components/Wordle_2"; // Relative path
+import GuessSong from "./Components/GuessSong"; // Relative path
+import Broccoli from "./Components/Broccoli"; // Relative path
+import Country from "./Components/Country"; // Relative path
+import CatComponent from "./Components/Julgåta"; // Relative path
+import Welcome from "./Components/Welcome"; // Relative path
 
-import "/Users/julianordqvist/advent-calendar/src/Css/Calendar.css";
+import "./Css/Calendar.css"; // Relative path
 
 const App = () => {
   return (

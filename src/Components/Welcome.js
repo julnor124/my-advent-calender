@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "/Users/julianordqvist/advent-calendar/src/Css/GuessSong.css"; // Ensure the path to styles is correct
+import "../Css/GuessSong.css"; // Correct relative path for CSS file
 
 const Welcome = () => {
   const [password, setPassword] = useState(""); // State for password input

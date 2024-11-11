@@ -1,6 +1,9 @@
 import React, { useState } from "react";
-import "/Users/julianordqvist/advent-calendar/src/Css/Broccoli.css"; // Ensure correct path for styles
-import carola from "/Users/julianordqvist/advent-calendar/src/Images/carola.jpg";
+// Use relative path for the CSS file
+import "../Css/Broccoli.css"; // This assumes the CSS file is inside src/Css/
+
+// Use relative path for the image file
+import carola from "../Images/carola.jpg"; // This assumes the image is inside src/Images/
 
 const Broccoli = () => {
   const [guess, setGuess] = useState("");

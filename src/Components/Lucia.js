@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import candleGirlImage from "/Users/julianordqvist/advent-calendar/src/Images/lucia.jpg"; // Ensure you have the correct path
-import fallingObjectImage from "/Users/julianordqvist/advent-calendar/src/Images/raindrop.jpg"; // Ensure you have the correct path
-import "/Users/julianordqvist/advent-calendar/src/Css/Lucia.css";
+import candleGirlImage from "../Images/lucia.jpg"; // Correct relative path for image
+import fallingObjectImage from "../Images/raindrop.jpg"; // Correct relative path for image
+import "../Css/Lucia.css"; // Correct relative path for the CSS file
 
 const Lucia = () => {
   const [characterPosition, setCharacterPosition] = useState(200);

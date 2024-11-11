@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import "/Users/julianordqvist/advent-calendar/src/Css/Calendar.css"; // Ensure the correct path
+import "../Css/Calendar.css"; // Correct relative path to the CSS file
 
 const Calendar = () => {
   const doors = Array.from({ length: 24 }, (_, index) => index + 1); // Creates an array [1, 2, ..., 24]

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "/Users/julianordqvist/advent-calendar/src/Css/GuessSong.css"; // Ensure correct path for styles
+import "../Css/GuessSong.css"; // Correct relative path to CSS
 
 const GuessSong = () => {
   const [guess, setGuess] = useState("");

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "/Users/julianordqvist/advent-calendar/src/Css/Wordle.css"; // Ensure correct path for styles
+import "../Css/Wordle.css"; // Correct relative path for CSS file
 
 const Wordle = () => {
   const [guess, setGuess] = useState("");

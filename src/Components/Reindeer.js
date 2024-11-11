@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-import "/Users/julianordqvist/advent-calendar/src/Css/Reindeer.css";
-import reindeerImage from "/Users/julianordqvist/advent-calendar/src/Images/rudolf.jpg";
+import "../Css/Reindeer.css"; // Correct relative path to the CSS file
+import reindeerImage from "../Images/rudolf.jpg"; // Correct relative path to the image
 
 function Reindeer() {
   const [reindeerPosition, setReindeerPosition] = useState(50); // Start in the middle

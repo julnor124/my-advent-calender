@@ -1,20 +1,26 @@
 import React, { useState } from "react";
-import { useParams } from "react-router-dom"; // Import useParams to get the door number
-import "/Users/julianordqvist/advent-calendar/src/Css/Door.css";
-import receptJul from "/Users/julianordqvist/advent-calendar/src/Images/recept_jul.jpg";
-import juliaJul from "/Users/julianordqvist/advent-calendar/src/Images/julia_jul.jpg";
-import Lucia from "/Users/julianordqvist/advent-calendar/src/Components/Lucia.js";
-import Reindeer from "/Users/julianordqvist/advent-calendar/src/Components/Reindeer.js";
-import juliahem from "/Users/julianordqvist/advent-calendar/src/Images/kommer-hem.jpg";
-import Syskon from "/Users/julianordqvist/advent-calendar/src/Images/syskon.jpg";
-import Prommis from "/Users/julianordqvist/advent-calendar/src/Images/jul-promenad.jpg";
-import AndraAdvent from "/Users/julianordqvist/advent-calendar/src/Images/andra-advent.jpg";
-import TredjeAdvent from "/Users/julianordqvist/advent-calendar/src/Images/tredje-advent.jpg";
-import FjärdeAdvent from "/Users/julianordqvist/advent-calendar/src/Images/fjärde-advent.jpg";
-import Föräldrar from "/Users/julianordqvist/advent-calendar/src/Images/mamma-pappa.jpg";
-import Grinchen from "/Users/julianordqvist/advent-calendar/src/Images/grinchen.jpg";
-import Skratt from "/Users/julianordqvist/advent-calendar/src/Images/skratt.jpg";
-import "/Users/julianordqvist/advent-calendar/src/Css/Lucia.css";
+import { useParams } from "react-router-dom"; // Correct import for useParams
+
+// Relative path imports for CSS
+import "../Css/Door.css"; // Correct relative path to Door.css
+import "../Css/Lucia.css"; // Correct relative path to Lucia.css
+
+// Relative path imports for images
+import receptJul from "../Images/recept_jul.jpg"; // Correct relative path to image
+import juliaJul from "../Images/julia_jul.jpg"; // Correct relative path to image
+import juliahem from "../Images/kommer-hem.jpg"; // Correct relative path to image
+import Syskon from "../Images/syskon.jpg"; // Correct relative path to image
+import Prommis from "../Images/jul-promenad.jpg"; // Correct relative path to image
+import AndraAdvent from "../Images/andra-advent.jpg"; // Correct relative path to image
+import TredjeAdvent from "../Images/tredje-advent.jpg"; // Correct relative path to image
+import FjärdeAdvent from "../Images/fjärde-advent.jpg"; // Correct relative path to image
+import Föräldrar from "../Images/mamma-pappa.jpg"; // Correct relative path to image
+import Grinchen from "../Images/grinchen.jpg"; // Correct relative path to image
+import Skratt from "../Images/skratt.jpg"; // Correct relative path to image
+
+// Relative path imports for components
+import Lucia from "../Components/Lucia"; // Correct relative path to Lucia.js
+import Reindeer from "../Components/Reindeer"; // Correct relative path to Reindeer.js
 
 const passwords = {
   1: "välkommen",
