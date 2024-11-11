@@ -1,0 +1,57 @@
+.game-container {
+  position: relative;
+  width: 90vw;
+  height: 80vh;
+  max-width: 400px;
+  max-height: 700px;
+  border: 2px solid #000;
+  background-color: #e0f7fa;
+  overflow: hidden;
+  touch-action: manipulation;
+}
+
+.reindeer {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: brown;
+  border-radius: 50%;
+  top: 50%;
+  left: 20px;
+  transition: top 0.1s;
+}
+
+.obstacle {
+  position: absolute;
+  bottom: 0;
+  width: 30px;
+  height: 200px;
+  background-color: green;
+  left: 100%;
+}
+
+.score {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.start-message,
+.game-over,
+.win-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5em;
+  color: #000;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.win-message {
+  color: green;
+}

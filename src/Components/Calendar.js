@@ -43,8 +43,33 @@ const Calendar = () => {
       <h1 className="welcome-message">JULIAS JULKALENDER TILL FAMILJEN 2024</h1>
       <div className="calendar">
         {doors.map((door) =>
-          door === 4 ? ( // If the door is 24, route to Wordle
-            <Link key={door} to={`/wordle`} className="door">
+          door === 4 ? (
+            // If the door is 4, route to Wordle
+            <Link key={door} to={`/w1`} className="door">
+              <div className="door-number">{door}</div>
+            </Link>
+          ) : door === 3 ? ( // If the door is 3, route to GuessSong
+            <Link key={door} to={`/song`} className="door">
+              <div className="door-number">{door}</div>
+            </Link>
+          ) : door === 7 ? ( // If the door is 7, route to a new component (e.g., Broccoli)
+            <Link key={door} to={`/broccoli`} className="door">
+              <div className="door-number">{door}</div>
+            </Link>
+          ) : door === 21 ? (
+            <Link key={door} to={`/w2`} className="door">
+              <div className="door-number">{door}</div>
+            </Link>
+          ) : door === 1 ? (
+            <Link key={door} to={`/welcome`} className="door">
+              <div className="door-number">{door}</div>
+            </Link>
+          ) : door === 16 ? (
+            <Link key={door} to={`/country`} className="door">
+              <div className="door-number">{door}</div>
+            </Link>
+          ) : door === 10 ? (
+            <Link key={door} to={`/julg`} className="door">
               <div className="door-number">{door}</div>
             </Link>
           ) : (

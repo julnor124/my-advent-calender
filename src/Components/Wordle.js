@@ -8,7 +8,7 @@ const Wordle = () => {
   const [password, setPassword] = useState(""); // State to hold the password input
   const [isUnlocked, setIsUnlocked] = useState(false); // State to check if the password is correct
 
-  const correctPassword = "tomtenisse"; // Replace with your desired password
+  const correctPassword = "godmorgon"; // Replace with your desired password
 
   const handleInputChange = (e) => {
     setGuess(e.target.value.toUpperCase()); // Convert input to uppercase
@@ -16,6 +16,11 @@ const Wordle = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // Validate the length of the guess
+    if (guess.length < 5) {
+      alert("Vänligen gissa på ett ord på 5 bokstäver."); // Alert for short guesses
+      return; // Prevent further execution
+    }
     if (guess.length === 5) {
       setAttempts([...attempts, guess]);
       setGuess("");
@@ -27,9 +32,12 @@ const Wordle = () => {
     if (password === correctPassword) {
       setIsUnlocked(true); // Unlock the game
     } else {
-      alert("Incorrect password. Please try again."); // Alert for incorrect password
+      alert("Fel lösenord."); // Alert for incorrect password
     }
   };
+
+  const hasGuessedCorrectly = attempts.includes(correctWord);
+  const maxAttemptsReached = attempts.length >= 5;
 
   return (
     <div className="wordle-container">
@@ -40,7 +48,7 @@ const Wordle = () => {
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            placeholder="Enter Password"
+            placeholder="Skriv lösenord"
           />
           <button onClick={handleUnlock}>Öppna lucka</button>
         </>
@@ -53,9 +61,15 @@ const Wordle = () => {
               value={guess}
               onChange={handleInputChange}
               maxLength={5}
-              placeholder="Enter 5-letter word"
+              placeholder="Skriv ett ord på 5 bokstäver"
+              disabled={hasGuessedCorrectly || maxAttemptsReached} // Disable input if conditions are met
             />
-            <button type="submit">Submit</button>
+            <button
+              type="submit"
+              disabled={hasGuessedCorrectly || maxAttemptsReached}
+            >
+              Gissa
+            </button>
           </form>
 
           <div className="attempts">
@@ -78,10 +92,18 @@ const Wordle = () => {
               </div>
             ))}
           </div>
-          {attempts.length >= 5 && !attempts.includes(correctWord) && (
+          {maxAttemptsReached && !hasGuessedCorrectly && (
             <div className="reveal">
               <p>
-                The correct word was: <strong>{correctWord}</strong>
+                Näääää vad synd. Rätt ord var: <strong>{correctWord}</strong>
+              </p>
+            </div>
+          )}
+          {hasGuessedCorrectly && (
+            <div className="reveal">
+              <p>
+                SLAAAAY QUEEN! Du gissade rätt ord:{" "}
+                <strong>{correctWord}. </strong>Du är så himla duktig och söt
               </p>
             </div>
           )}

@@ -71,27 +71,27 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 Idéer för luckorna:
 
-1. Välkommsvideo
-2. en liten jultext
-3. Gissa låten (gissa jullåten)
+1. Välkommsvideo (KLAR)
+2. en liten jultext (KLAR)
+3. Gissa låten (gissa jullåten) (KLAR)
 4. En julordel (KLAR)
-5. carola broccoli
-6. Lite lugnare lucka idag. Ät en pepparkaka och kolla på denna brasa
-7.
-8. någon julhälsning
-9. någon liten jultext
-10.
-11. Gissa låten när jag sjunger baklänges
-12.
-13. Video, ha en fin lucia och ät lite lussebullar
-14.
-15.
-16.
-17.
-18.
-19.
-20. Julprommenad
-21. Kolla grinchen med mig
-22.
-23. uppesittarkväll (videohälsning)
-24. Video, tack för att ni deltagit i denna julkalender (kolla under min säng för ett minipaket)
+5. Bild på mig (KLAR)
+6. Lite lugnare lucka idag. Ät ngt och kolla på denna brasa (KLAR)
+7. carola broccoli (KLAR)
+8. ANDRA ADVENT (KLAR)
+9. Utmaning, skicka bild på er själva med något julaktigt. (KLAR)
+10. julskämt (KLAR)
+11. syskonbild (KLAR)
+12. Julgåta (KLAR)
+13. Luciaspel (KLAR)
+14. Utmaning (KLAR)
+15. Tredje advent (KLAR)
+16. Gissa landet (KLAR)
+17. bild på mamma och pappa (KLAR)
+18. Utmaning (KLAR)
+19. grattis till er jag kommer hem idag (KLAR)
+20. Julprommenad (KLAR)
+21. Julordel (KLAR)
+22. Fjärde Advent (KLAR)
+23. Kolla julfilm (KLAR)
+24. Julspel (KLAR)

@@ -1,0 +1,31 @@
+/* Lucia.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.door-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

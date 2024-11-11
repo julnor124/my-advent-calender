@@ -1,7 +1,7 @@
 /* General styles for the door content */
 .door-content {
   text-align: center;
-  padding: 20px;
+  align-items: center;
   color: #333; /* Default text color */
   min-height: 100vh; /* Make sure it takes full height on smaller screens */
   display: flex;
@@ -24,6 +24,7 @@ input[type="password"] {
 button {
   padding: 10px 20px;
   font-size: 16px;
+
   color: white;
   background-color: red; /* Change to your desired color */
   border: none;
