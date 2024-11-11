@@ -81,7 +81,10 @@ const CatComponent = () => {
         </>
       ) : (
         <>
-          <h2>Lista ut JULGÅTAN! Du har 3 försök på dig</h2>
+          <h2>
+            Lista ut JULGÅTAN! Du har 3 försök på dig: Vilken katt trivs bäst i
+            värmen?
+          </h2>
 
           <img
             src={Cat}
