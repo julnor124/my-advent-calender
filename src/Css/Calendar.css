@@ -85,7 +85,7 @@ video {
   margin: 20px 0; /* Add some spacing above and below */
   font-size: 3rem; /* Larger font size for emphasis */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Shadow for better readability */
-  font-family: "Great Vibes", cursive; /* Festive cursive font */
+  font-family: "Great Vibes"; /* Festive cursive font */
   background: rgba(0, 128, 0, 0.7); /* Semi-transparent green background */
   padding: 20px; /* Add padding around the text */
   border-radius: 10px; /* Rounded corners for a softer look */
