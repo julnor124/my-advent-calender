@@ -48,7 +48,7 @@ const OneBComponent = () => {
       {/* Conditionally render confetti */}
       {isCorrect && <Confetti />}
 
-      <h2>Lista ut DINOUSARIEN! Du har 3 försök på dig:</h2>
+      <h2>Lista ut DINOSAURIEN! Du har 3 försök på dig:</h2>
 
       <img
         src={trex}
