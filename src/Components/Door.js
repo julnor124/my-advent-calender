@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom"; // Correct import for useParams
+import { useNavigate } from "react-router-dom";
 
 // Relative path imports for CSS
 import "../Css/Door.css"; // Correct relative path to Door.css
@@ -51,7 +52,7 @@ const passwords = {
 
 const Door = () => {
   const { doorNumber } = useParams(); // Get door number from URL
-
+  const navigate = useNavigate(); // Hook for navigation
   const [password, setPassword] = useState(""); // State to hold the password input
   const [isUnlocked, setIsUnlocked] = useState(false); // State to check if the door is unlocked
 
@@ -148,8 +149,23 @@ const Door = () => {
               allowFullScreen
               style={{ maxWidth: "100%", borderRadius: "10px" }}
             ></iframe>
+            <button
+              onClick={() => navigate("/tictactoe")}
+              style={{
+                marginTop: "20px",
+                padding: "10px 20px",
+                backgroundColor: "#28a745",
+                color: "white",
+                border: "none",
+                borderRadius: "5px",
+                cursor: "pointer",
+              }}
+            >
+              Överraskning till 1B, tryck här
+            </button>
           </div>
         );
+
       case "7":
         return "Door 7 brings holiday joy!";
       case "8":

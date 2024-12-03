@@ -1,0 +1,114 @@
+/* Background with a festive touch */
+body {
+  background-color: #fffcf9; /* Light snowflake background color */
+  background-image: url("https://www.transparenttextures.com/patterns/snowflakes.png"); /* Optional background image for snowflakes */
+  background-repeat: repeat;
+  font-family: "Arial", sans-serif;
+}
+
+/* Centering the entire Tic-Tac-Toe game */
+.tic-tac-toe {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ff4f81; /* Christmas red background */
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the game board */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 100%;
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border: 2px solid #f0f0f0;
+  font-size: 0; /* Hide any text that may be rendered */
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Background images for 'X' and 'O' (Player 1 and Player 2) */
+.cell.X {
+  background-image: url("../Images/kids.jpg"); /* Player 1 image */
+}
+
+.cell.O {
+  background-image: url("../Images/AI.jpg"); /* Player 2 image */
+}
+
+/* Highlight cells on hover for better interactivity */
+.cell:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.1);
+}
+
+/* Styling the winner message */
+.winner {
+  margin: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling buttons */
+button {
+  padding: 12px 24px;
+  background-color: #388e3c; /* Christmas green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2e7d32; /* Darker green when hovered */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .tic-tac-toe {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .board {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 90%;
+  }
+
+  .cell {
+    width: 70px;
+    height: 70px;
+    font-size: 1.8rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
