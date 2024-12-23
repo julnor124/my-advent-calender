@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
 import "../Css/Reindeer.css"; // Correct relative path to the CSS file
 import reindeerImage from "../Images/rudolf.jpg"; // Correct relative path to the image
 
@@ -11,6 +12,7 @@ function Reindeer() {
   const [gameWon, setGameWon] = useState(false); // Track if game has been won
 
   const gameAreaRef = useRef(null);
+  const navigate = useNavigate(); // Navigation hook for final challenge
   const floorHeight = 10; // Height of the floor in percentage
   const obstacleWidth = 10; // Width of the obstacle in percentage
   const reindeerWidth = 10; // Width of the reindeer (for collision detection)
@@ -92,6 +94,11 @@ function Reindeer() {
     }
   };
 
+  // Navigate to the final challenge page
+  const goToFinalChallenge = () => {
+    navigate("/final-challenge");
+  };
+
   return (
     <div
       className="game-container"
@@ -103,8 +110,10 @@ function Reindeer() {
       {gameOver && gameWon && (
         <div className="win-message">
           GRATTIS DU KLARADE SPELET! GOD FAAAKKING JUL och tack för att ni
-          deltagit i denna julkalender. PS, kolla under er säng för en liten
-          överraskning 🎉
+          deltagit i denna julkalender.
+          <button onClick={goToFinalChallenge} className="final-button">
+            🎉 Gå till sista utmaningen 🎉
+          </button>
         </div>
       )}
       {gameOver && !gameWon && (

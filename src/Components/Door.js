@@ -361,7 +361,7 @@ const Door = () => {
       case "24":
         return (
           <div>
-            <p>Klara ut spelet för en överraskning!</p>
+            <p>Klara ut spelet, få 10 poäng!</p>
             <Reindeer />
           </div>
         );

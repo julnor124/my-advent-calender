@@ -11,6 +11,7 @@ import CatComponent from "./Components/Julgåta";
 import Welcome from "./Components/Welcome";
 import OneBComponent from "./Components/OneB";
 import TicTacToe from "./Components/TicTackToe";
+import FinalChallenge from "./Components/FinalChallenge";
 import "./Css/Calendar.css";
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/welcome" element={<Welcome />} />
           <Route path="/oneb" element={<OneBComponent />} />
           <Route path="/tictactoe" element={<TicTacToe />} />
+          <Route path="/final-challenge" element={<FinalChallenge />} />
         </Routes>
       </div>
     </Router>
